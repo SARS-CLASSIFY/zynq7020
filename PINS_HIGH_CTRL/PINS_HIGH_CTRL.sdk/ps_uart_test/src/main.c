@@ -53,7 +53,6 @@ extern int64_t running_flag = 0 ;
 //
 //}
 
-
 int main(void)
 {
 	//定义状态及PS端串口结构体

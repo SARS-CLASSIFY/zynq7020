@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1695443050">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1695467955">
   <File Type="PWROPT-DCP" Name="top_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="top_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="top_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="top_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="top_wrapper_reports.tcl"/>
   <File Type="BG-DRC" Name="top_wrapper.drc"/>
-  <File Type="OPT-DCP" Name="top_wrapper_opt.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="top_wrapper_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="top_wrapper.hwdef"/>
+  <File Type="OPT-DCP" Name="top_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="top_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="top_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="top_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="top_wrapper_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="top_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="top_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="top_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="top_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="top_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="top_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="top_wrapper_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="top_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="top_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_wrapper_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="top_wrapper.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="top_wrapper_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="top_wrapper_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="top_wrapper_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="top_wrapper_routed_bb.dcp"/>
@@ -37,13 +48,18 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="top_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="top_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="top_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_wrapper_incremental_reuse_routed.rpt"/>
   <File Type="RDI-RDI" Name="top_wrapper.vdi"/>
   <File Type="ROUTE-CLK" Name="top_wrapper_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="top_wrapper.nky"/>
   <File Type="BITSTR-BMM" Name="top_wrapper_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="top_wrapper.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="top_wrapper.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="top_wrapper.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -100,8 +116,4 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="top_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_pin_ctrl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_rst_ps7_0_50M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="top_auto_pc_0"/>
 </GenRun>

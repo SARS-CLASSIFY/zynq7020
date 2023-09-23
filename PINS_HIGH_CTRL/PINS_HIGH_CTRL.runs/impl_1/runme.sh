@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/86150/Desktop/08_ps_uart/ps_uart.runs/impl_1'
+HD_PWD='J:/GIT/zynq7020/PINS_HIGH_CTRL/PINS_HIGH_CTRL.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

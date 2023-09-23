@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]J:\GIT\zynq7020\PINS_HIGH_CTRL\PINS_HIGH_CTRL.sdk\FSBL_TEST\Debug\FSBL_TEST.elf
+	J:\GIT\zynq7020\PINS_HIGH_CTRL\PINS_HIGH_CTRL.sdk\top_wrapper_hw_platform_0\top_wrapper.bit
+	J:\GIT\zynq7020\PINS_HIGH_CTRL\PINS_HIGH_CTRL.sdk\ps_uart_test\Debug\ps_uart_test.elf
+}

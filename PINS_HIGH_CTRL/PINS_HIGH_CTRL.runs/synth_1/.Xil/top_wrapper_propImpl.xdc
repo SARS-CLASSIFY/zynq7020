@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/86150/Desktop/08_ps_uart/ps_uart.srcs/constrs_1/new/top_wrapper.xdc rfile:../../../ps_uart.srcs/constrs_1/new/top_wrapper.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:J:/GIT/zynq7020/PINS_HIGH_CTRL/PINS_HIGH_CTRL.srcs/constrs_1/new/top_wrapper.xdc rfile:../../../PINS_HIGH_CTRL.srcs/constrs_1/new/top_wrapper.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W19 [get_ports {pins_out[0]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

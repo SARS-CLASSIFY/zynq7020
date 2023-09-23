@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="F:\intel_project\AX7020\update2017p4\03_ps_uart\bootimage" key="bootgen_files_selection"/>
+	<item value="J:\GIT\zynq7020\PINS_HIGH_CTRL\PINS_HIGH_CTRL.sdk\ps_uart_test\Debug" key="bootgen_files_selection"/>
 	<item value="C:\Users\86150\Desktop\08_ps_uart\ps_uart.sdk\top_wrapper_hw_platform_0" key="debug_files_selection"/>
-	<item value="F:\intel_project\AX7020\update2017p4\03_ps_uart\bootimage" key="zynq_flash_files_selection"/>
-	<item value="C:\Users\86150\Desktop\08_ps_uart\ps_uart.sdk\top_wrapper_hw_platform_0" key="last_stored_selection"/>
+	<item value="J:\GIT\zynq7020\FSBL_File" key="zynq_flash_files_selection"/>
+	<item value="J:\GIT\zynq7020\PINS_HIGH_CTRL\PINS_HIGH_CTRL.sdk\ps_uart_test\Debug" key="last_stored_selection"/>
 </section>

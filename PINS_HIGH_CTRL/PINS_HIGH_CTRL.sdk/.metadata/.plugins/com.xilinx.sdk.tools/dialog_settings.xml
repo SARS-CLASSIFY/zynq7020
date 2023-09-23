@@ -5,8 +5,8 @@
 	<item value="qspi_single" key="top_wrapper_hw_platform_0-flashType"/>
 	<item value="false" key="top_wrapper_hw_platform_0-blankCheck"/>
 	<item value="Auto Detect" key="top_wrapper_hw_platform_0-device"/>
-	<item value="F:\intel_project\AX7020\update2017p4\zynq_fsbl_flash.elf" key="top_wrapper_hw_platform_0-fsblFile"/>
+	<item value="J:\GIT\zynq7020\FSBL_File\zynq_fsbl_flash.elf" key="top_wrapper_hw_platform_0-fsblFile"/>
 	<item value="true" key="top_wrapper_hw_platform_0-verifyFlash"/>
-	<item value="F:\intel_project\AX7020\update2017p4\03_ps_uart\bootimage\BOOT.bin" key="top_wrapper_hw_platform_0-imgFile"/>
+	<item value="J:\GIT\zynq7020\PINS_HIGH_CTRL\PINS_HIGH_CTRL.sdk\ps_uart_test\bootimage\BOOT.bin" key="top_wrapper_hw_platform_0-imgFile"/>
 	<item value="Local" key="top_wrapper_hw_platform_0-target"/>
 </section>
