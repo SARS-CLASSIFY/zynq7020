@@ -1,0 +1,64 @@
+13:58:35 **** Auto Build of configuration Debug for project ps_uart_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_uart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:33:16: warning: 'fre' initialized and declared 'extern'
+ extern int64_t fre = 0  ;
+                ^~~
+../src/main.c:34:16: warning: 'pins' initialized and declared 'extern'
+ extern int64_t pins = 0 ;
+                ^~~~
+../src/main.c:35:16: warning: 'running_flag' initialized and declared 'extern'
+ extern int64_t running_flag = 0 ;
+                ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:69:11: warning: passing argument 2 of 'memset' makes integer from pointer without a cast [-Wint-conversion]
+  memset(0,rec_data,sizeof(rec_data));
+           ^~~~~~~~
+In file included from f:\xilinx\sdk\2017.4\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/main.c:6:
+f:\xilinx\sdk\2017.4\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:25:7: note: expected 'int' but argument is of type 'u8 * {aka unsigned char *}'
+ _PTR  _EXFUN(memset,(_PTR, int, size_t));
+       ^
+../src/main.c:69:2: warning: null argument where non-null required (argument 1) [-Wnonnull]
+  memset(0,rec_data,sizeof(rec_data));
+  ^~~~~~
+../src/main.c:115:9: warning: implicit declaration of function 'my_strcmp' [-Wimplicit-function-declaration]
+      if(my_strcmp(SendBufferPtr+ReceivedByteNum-2,"hz",2)==1){
+         ^~~~~~~~~
+../src/main.c:117:13: warning: implicit declaration of function 'myatoi' [-Wimplicit-function-declaration]
+       fre = myatoi(SendBufferPtr);
+             ^~~~~~
+../src/main.c:126:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int64_t {aka long long int}' [-Wformat=]
+       printf("ok set fre = %d hz\r\n",fre);
+                             ^
+../src/main.c:154:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int64_t {aka long long int}' [-Wformat=]
+       printf("set_pins:%d \r\n",pins);
+                         ^
+../src/main.c:64:6: warning: variable 'SendByteNum' set but not used [-Wunused-but-set-variable]
+  u32 SendByteNum ;//·¢ËÍ×Ö½ÚÊý
+      ^~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/my_uart.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/my_uart.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_uart_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/my_uart.d" -MT"src/my_uart.o" -o "src/my_uart.o" "../src/my_uart.c"
+'Finished building: ../src/my_uart.c'
+' '
+'Building target: ps_uart_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_uart_test_bsp/ps7_cortexa9_0/lib -o "ps_uart_test.elf"  ./src/main.o ./src/my_uart.o ./src/util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_uart_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ps_uart_test.elf  |tee "ps_uart_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  86840	   4248	  25568	 116656	  1c7b0	ps_uart_test.elf
+'Finished building: ps_uart_test.elf.size'
+' '
+
+13:58:37 Build Finished (took 1s.472ms)
+

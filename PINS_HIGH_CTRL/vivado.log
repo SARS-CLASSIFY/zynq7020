@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Sep 23 14:08:37 2023
+# Process ID: 24704
+# Current directory: J:/zynq/PINS_HIGH_CTRL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23952 J:\zynq\PINS_HIGH_CTRL\PINS_HIGH_CTRL.xpr
+# Log file: J:/zynq/PINS_HIGH_CTRL/vivado.log
+# Journal file: J:/zynq/PINS_HIGH_CTRL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/zynq/PINS_HIGH_CTRL/PINS_HIGH_CTRL.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'j:/zynq/IP_LOCATION/custom_ip/ip_repo/pin_ctrl_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 861.934 ; gain = 125.555
+update_compile_order -fileset sources_1
+open_bd_design {J:/zynq/PINS_HIGH_CTRL/PINS_HIGH_CTRL.srcs/sources_1/bd/top/top.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:pin_ctrl:1.0 - pin_ctrl_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <top> from BD file <J:/zynq/PINS_HIGH_CTRL/PINS_HIGH_CTRL.srcs/sources_1/bd/top/top.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 951.180 ; gain = 86.902
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 23 14:09:31 2023...
